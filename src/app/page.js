@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import FurnitureGrid from "./components/Home/FurnitureGrid/FurnitureGrid";
 import FurnitureType from "./components/Home/FurnitureType";
 import Hero from "./components/Home/Hero";
 import Products from "./components/Home/Products";
@@ -10,6 +12,8 @@ export default function Home() {
       <FurnitureType />
       <Products />
       <SliderSection />
+      <FurnitureGrid />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,4 +1,7 @@
 #largeSlider {
+  .hidden-div {
+    display: none;
+  }
   .swiper {
     width: 100%;
     height: 100%;
@@ -19,6 +22,10 @@
     height: 582px;
   }
 
+  .swiper-slide-active .hidden-div {
+    display: block;
+  }
+
   .swiper-slide-prev,
   .swiper-slide-next {
     width: 404px;
@@ -29,7 +36,7 @@
   .swiper-pagination-custom,
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 46%;
+    left: 50%;
     width: 20%;
   }
 

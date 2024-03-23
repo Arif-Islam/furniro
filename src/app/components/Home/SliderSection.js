@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import img1 from "../../assets/slide-1.png";
 import img2 from "../../assets/slide-2.png";
 import SliderCard from "./SliderCard";
@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 
+import { ChevronRight } from "lucide-react";
+import { useRef } from "react";
 import { Pagination } from "swiper/modules";
 
 const data = [
@@ -40,6 +42,7 @@ const data = [
 ];
 
 const SliderSection = () => {
+  const swiperRef = useRef();
   return (
     <div className="bg-[#FCF8F3] mt-8">
       <div className="max-w-[1440px] mx-auto pt-10 flex flex-col xl:flex-row items-center overflow-hidden gap-y-16">
@@ -71,6 +74,10 @@ const SliderSection = () => {
               }}
               modules={[Pagination]}
               className="mySwiper"
+              loop={true}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
             >
               {data.map((item) => (
                 <SwiperSlide key={item.id}>
@@ -78,17 +85,18 @@ const SliderSection = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            {/* <div id="arrowDiv">
-            <div className="w-14 h-12 bg-[#B88E2F] flex items-center justify-center absolute bottom-6 left-[245px] z-10 cursor-pointer swiper-pagination-bullet swiper-pagination-horizontal">
+            <div id="arrowDiv">
+              {/* <div className="w-14 h-12 bg-[#B88E2F] flex items-center justify-center absolute bottom-6 left-[245px] z-10 cursor-pointer swiper-pagination-bullet swiper-pagination-horizontal">
               <Image src={arrow1} alt="arrow" width={24} height={24} />
+            </div> */}
+              <div
+                className="w-12 h-12 bg-white rounded-full flex items-center justify-center absolute right-0 z-10 cursor-pointer"
+                style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
+                onClick={() => swiperRef?.current?.slideNext()}
+              >
+                <ChevronRight className="w-6 h-6 bg-white text-[#B88E2F]" />
+              </div>
             </div>
-            <div
-              className="w-12 h-12 bg-white rounded-full flex items-center justify-center absolute right-0 z-10 cursor-pointer"
-              style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
-            >
-              <ChevronRight className="w-6 h-6 bg-white text-[#B88E2F]" />
-            </div>
-          </div> */}
           </div>
         </div>
         <div className="md:hidden w-11/12 mx-auto mb-16" id="mobileSlider">
