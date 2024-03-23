@@ -8,6 +8,7 @@ import img6 from "../../assets/products/image-6.png";
 import img7 from "../../assets/products/image-7.png";
 import img8 from "../../assets/products/image-8.png";
 import ProductCard from "./ProductCard";
+
 const products = [
   {
     id: 1,
