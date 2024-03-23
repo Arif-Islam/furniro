@@ -3,7 +3,7 @@ import img1 from "../../assets/products/image-1.png";
 import img2 from "../../assets/products/image-2.png";
 import img3 from "../../assets/products/image-3.png";
 import img4 from "../../assets/products/image-4.png";
-import img5 from "../../assets/products/image-5.png";
+// import img5 from "../../assets/products/image-5.png";
 // import {
 //   default as img4,
 //   default as img5,
@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: 5,
-    img: img5,
+    img: img8,
     title: "Grifo",
     desc: "Night lamp",
     price: "Rp 1.500.000",
