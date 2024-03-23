@@ -4,6 +4,10 @@ import img2 from "../../assets/products/image-2.png";
 import img3 from "../../assets/products/image-3.png";
 import img4 from "../../assets/products/image-4.png";
 import img5 from "../../assets/products/image-5.png";
+// import {
+//   default as img4,
+//   default as img5,
+// } from "../../assets/products/image-4.png";
 import img6 from "../../assets/products/image-6.png";
 import img7 from "../../assets/products/image-7.png";
 import img8 from "../../assets/products/image-8.png";
