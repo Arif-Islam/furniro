@@ -20,10 +20,10 @@ const FurnitureGrid = () => {
         #FuniroFurniture
       </h3>
       <div
-        class="grid gap-4 h-auto md:h-screen lg:h-[60vh] xl:h-[90vh] 2xl:h-[75vh] mb-40 mt-14 grid-flow-dense"
+        class="grid gap-4 h-auto md:h-screen lg:h-[60vh] xl:h-[90vh] 2xl:h-[75vh] mb-20 md:mb-40 mt-14 grid-flow-dense"
         style={{ gridTemplateColumns: "repeat(auto-fill, minmax(100px, 1fr))" }}
       >
-        <div class="bg-indigo-100 col-span-1 row-span-12">
+        <div class="col-span-1 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img1}
@@ -33,7 +33,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-red-100 col-span-4 row-span-12">
+        <div class="col-span-4 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img2}
@@ -43,7 +43,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-purple-100 col-span-3 row-span-12">
+        <div class="col-span-3 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img3}
@@ -53,7 +53,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-violet-100 col-span-2 row-span-12">
+        <div class="col-span-2 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img4}
@@ -63,7 +63,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-sky-100 col-span-2 row-span-12">
+        <div class="col-span-2 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img5}
@@ -73,7 +73,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-emerald-100 col-span-2 row-span-12">
+        <div class="col-span-2 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img6}
@@ -83,7 +83,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-emerald-100 col-span-4 row-span-12">
+        <div class="col-span-4 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img7}
@@ -93,7 +93,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-emerald-100 col-span-3 row-span-12">
+        <div class="col-span-3 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img8}
@@ -103,7 +103,7 @@ const FurnitureGrid = () => {
             />
           </div>
         </div>
-        <div class="bg-emerald-100 col-span-2 row-span-12">
+        <div class="col-span-2 row-span-12">
           <div className="w-full h-full relative">
             <Image
               src={img9}
@@ -114,35 +114,6 @@ const FurnitureGrid = () => {
           </div>
         </div>
       </div>
-      {/* <div className="main-div">
-        <div className="img-div">
-          <Image src={img1} fill alt="true" className="vertical" />
-        </div>
-        <div className="img-div">
-          <Image src={img2} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img3} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img4} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img5} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img6} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img7} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img8} fill alt="true" />
-        </div>
-        <div className="img-div">
-          <Image src={img9} fill alt="true" />
-        </div>
-      </div> */}
     </div>
   );
 };

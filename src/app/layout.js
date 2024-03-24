@@ -1,6 +1,7 @@
 import { Montserrat, Poppins } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.variable} ${montserrat.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,9 +1,8 @@
-import Footer from "./components/Footer";
-import FurnitureGrid from "./components/Home/FurnitureGrid/FurnitureGrid";
-import FurnitureType from "./components/Home/FurnitureType";
-import Hero from "./components/Home/Hero";
-import Products from "./components/Home/Products";
-import SliderSection from "./components/Home/SliderSection";
+import FurnitureGrid from "../components/Home/FurnitureGrid/FurnitureGrid";
+import FurnitureType from "../components/Home/FurnitureType";
+import Hero from "../components/Home/Hero";
+import Products from "../components/Home/Products";
+import SliderSection from "../components/Home/SliderSection";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <Products />
       <SliderSection />
       <FurnitureGrid />
-      <Footer />
     </div>
   );
 }

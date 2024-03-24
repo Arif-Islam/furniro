@@ -39,7 +39,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/"
+          href="/shop"
           className="pr-[35px] 2xl:pr-[75px]  hover:text-[#B88E2F] transition-all duration-300 ease-in-out"
         >
           Shop
@@ -72,7 +72,7 @@ const Navbar = () => {
           width={28}
           height={28}
           alt="fav"
-          className="hover:bg-red-500 rounded-full hover:text-red-500 w-5 h-5 md:w-7 md:h-7"
+          className=" rounded-full hover:text-red-500 w-5 h-5 md:w-7 md:h-7"
         />
         <Image
           src={cart}

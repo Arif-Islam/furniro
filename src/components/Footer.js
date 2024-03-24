@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="w-full border border-[#0000002B] mb-12"></div>
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-start mb-12 gap-y-12 px-6 lg:px-4 xl:px-0">
         <div className="w-[285px] mr-[80px] xl:mr-[136px]">
-          <h3 className="font-extrabold text-xl lg:text-2xl mb-8 md:mb-12">
-            Funiro.
+          <h3 className="font-bold text-xl lg:text-2xl mb-8 md:mb-12">
+            Furniro.
           </h3>
           <p className="text-[#9f9f9f] ">
             400 University Drive Suite 200 Coral Gables, FL 33134 USA
