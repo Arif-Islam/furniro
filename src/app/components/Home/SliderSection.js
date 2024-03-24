@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../../assets/slide-1.png";
 import img2 from "../../assets/slide-2.png";
 import SliderCard from "./SliderCard";
@@ -20,24 +20,28 @@ const data = [
     img: img1,
     title: "01 - Bed Room",
     desc: "Inner Peace",
+    link: "#",
   },
   {
     id: 2,
     img: img2,
     title: "02 - Dining Room",
     desc: "Stylish Chair",
+    link: "#",
   },
   {
     id: 3,
     img: img1,
     title: "03 - Dining Room",
     desc: "Stylish Chair",
+    link: "#",
   },
   {
     id: 4,
     img: img2,
     title: "04 - Dining Room",
     desc: "Stylish Chair",
+    link: "#",
   },
 ];
 
@@ -86,9 +90,6 @@ const SliderSection = () => {
               ))}
             </Swiper>
             <div id="arrowDiv">
-              {/* <div className="w-14 h-12 bg-[#B88E2F] flex items-center justify-center absolute bottom-6 left-[245px] z-10 cursor-pointer swiper-pagination-bullet swiper-pagination-horizontal">
-              <Image src={arrow1} alt="arrow" width={24} height={24} />
-            </div> */}
               <div
                 className="w-12 h-12 bg-white rounded-full flex items-center justify-center absolute right-0 z-10 cursor-pointer"
                 style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
@@ -100,7 +101,12 @@ const SliderSection = () => {
           </div>
         </div>
         <div className="md:hidden w-11/12 mx-auto mb-16" id="mobileSlider">
-          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+          <Swiper
+            pagination={true}
+            modules={[Pagination]}
+            loop={true}
+            className="mySwiper"
+          >
             {data.map((item) => (
               <SwiperSlide key={item.id}>
                 <SliderCard item={item} />

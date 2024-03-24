@@ -13,7 +13,7 @@ export default function Home() {
       <Products />
       <SliderSection />
       <FurnitureGrid />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
