@@ -1,6 +1,6 @@
-import AllProducts from "@/components/Shop/AllProducts";
-import Service from "@/components/Shop/Service";
-import ShopBanner from "@/components/Shop/ShopBanner";
+import AllProducts from "../../components/Shop/AllProducts";
+import Service from "../../components/Shop/Service";
+import ShopBanner from "../../components/Shop/ShopBanner";
 
 const Shop = () => {
   return (

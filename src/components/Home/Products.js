@@ -4,7 +4,7 @@ import Link from "next/link";
 //   default as img4,
 //   default as img5,
 // } from "../../assets/products/image-4.png";
-import products from "@/products";
+import products from "../../products";
 import ProductCard from "./ProductCard";
 
 const Products = () => {

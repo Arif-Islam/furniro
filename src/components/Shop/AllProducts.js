@@ -1,4 +1,4 @@
-import products from "@/products";
+import products from "../../products";
 import Image from "next/image";
 import filter from "../../assets/Shop/filter.png";
 import icon1 from "../../assets/Shop/rectangle.png";
