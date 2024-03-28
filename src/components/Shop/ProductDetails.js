@@ -55,12 +55,12 @@ const ProductDetails = () => {
       </div>
       <hr className="w-full border border-[#d9d9d9] mb-10" />
       <div className="text-[#9f9f9f] mb-3 flex">
-        <p className="mr-[61px] ">SKU</p>
+        <p className="mr-[70px] ">SKU</p>
         <p className="mr-3 font-medium">:</p>
         <p>SS001</p>
       </div>
       <div className="text-[#9f9f9f] mb-3 flex">
-        <p className="mr-[26px]">Category</p>
+        <p className="mr-[25px]">Category</p>
         <p className="mr-3 font-medium">:</p>
         <p>Sofas</p>
       </div>
