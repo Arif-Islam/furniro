@@ -10,4 +10,22 @@
   font-family: var(--font-montserrat);
 }
 
+.cart-style {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 100svh;
+  background: red;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
 
+.closed-cart {
+  right: -100%;
+}
+
+.open-cart {
+  right: 0;
+}

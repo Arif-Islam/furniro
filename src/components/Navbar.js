@@ -7,11 +7,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import logo from "../assets/Meubel House_Logos-05.png";
 import fav from "../assets/akar-icons_heart.png";
-import cart from "../assets/ant-design_shopping-cart-outlined.png";
+import cartImage from "../assets/ant-design_shopping-cart-outlined.png";
 import user from "../assets/mdi_account-alert-outline.png";
+import Cart from "./Shop/Cart";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [cart, setCart] = useState(false);
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -24,7 +26,7 @@ const Navbar = () => {
           width={50}
           height={32}
           alt="logo"
-          className="w-7 h-7 md:w-[50px] md:h-[50px] "
+          className="w-7 h-5 md:w-[50px] md:h-[35px] "
         />
         <p className="font-montserrat font-bold text-xl md:text-[34px] text-black">
           Furniro
@@ -75,11 +77,15 @@ const Navbar = () => {
           className=" rounded-full hover:text-red-500 w-5 h-5 md:w-7 md:h-7"
         />
         <Image
-          src={cart}
+          src={cartImage}
           width={28}
           height={28}
           alt="cart"
-          className="w-5 h-5 md:w-7 md:h-7"
+          className="w-5 h-5 md:w-7 md:h-7 cursor-pointer"
+          onClick={() => {
+            setCart(true);
+            console.log("cart ", cart);
+          }}
         />
         <AlignJustify
           className="w-5 h-5 md:w-7 md:h-7 lg:hidden"
@@ -89,7 +95,7 @@ const Navbar = () => {
       {open && (
         <div
           data-aos="fade-left"
-          className="lg:hidden absolute inset-y-0 right-0 z-10 w-full flex flex-col items-end"
+          className="lg:hidden absolute inset-y-0 right-0 z-10 w-full flex flex-col items-end font-poppins"
         >
           <div
             onClick={() => setOpen(false)}
@@ -108,7 +114,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href="/"
+                href="/shop"
                 className="  hover:text-[#B88E2F] transition-all duration-300 ease-in-out"
               >
                 Shop
@@ -129,6 +135,19 @@ const Navbar = () => {
           </div>
         </div>
       )}
+      <div
+        onClick={() => setCart(!cart)}
+        className={`fixed inset-0 z-[15] bg-black opacity-15 transition-all duration-300 ease-in ${
+          cart ? "block" : "hidden"
+        }`}
+      ></div>
+      <div
+        className={`fixed inset-y-0 right-0 w-full md:w-[417px] h-screen bg-white z-20 transition-all duration-500 ease-in-out font-poppins ${
+          cart ? "open-cart" : "closed-cart"
+        }`}
+      >
+        <Cart setCart={setCart} />
+      </div>
     </div>
   );
 };

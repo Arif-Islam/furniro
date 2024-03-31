@@ -1,11 +1,11 @@
+import CommonBanner from "../../components/Shared/CommonBanner";
 import AllProducts from "../../components/Shop/AllProducts";
 import Service from "../../components/Shop/Service";
-import ShopBanner from "../../components/Shop/ShopBanner";
 
 const Shop = () => {
   return (
     <div className="font-poppins">
-      <ShopBanner />
+      <CommonBanner title="Shop" route="Shop" />
       <AllProducts />
       <Service />
     </div>

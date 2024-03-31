@@ -1,4 +1,3 @@
-import { Link } from "lucide-react";
 import Image from "next/image";
 import sofa1 from "../../../assets/Shop/sofa-group.png";
 import sofa2 from "../../../assets/Shop/sofa-group2.png";
@@ -7,6 +6,7 @@ import ProductCard from "../../../components/Home/ProductCard";
 import ProductDetails from "../../../components/Shop/ProductDetails";
 import ProductSlider from "../../../components/Shop/ProductSlider";
 import products from "../../../products";
+import Link from "next/link";
 const Proudct = () => {
   return (
     <div className="font-poppins">
